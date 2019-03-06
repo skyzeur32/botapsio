@@ -5,7 +5,7 @@ const myBot = new Discord.Client();
 const Google = require('./commandes/google');
 const Ping = require('./commandes/ping');
 const Apprendre = require('./commandes/apprendre');
-myBot.login('NTI2MDI3NDcyODk5MTQ1NzI5.Dv_mPw.0CV8I50RAJ2awaomzgzN7zPZ4RY');
+myBot.login(process.env.TOKEN);
 
 myBot.on('ready', function() {
 	//myBot.user.setAvatar('./avatar.png').catch(console.error)
